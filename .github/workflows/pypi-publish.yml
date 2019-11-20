@@ -1,0 +1,9 @@
+- name: pypi-publish
+  uses: pypa/gh-action-pypi-publish@v1.0.0a0
+  with:
+    # PyPI user
+    user: 056e8ed9-7031-4a26-a6cb-e98c77ccef6d # optional, default is __token__
+    # Password for your PyPI user or an access token
+    password: ${{ secrets.PYPI_TOKEN_PASSWORD }}
+    # The repository URL to use
+    repository_url: # optional
